@@ -41,5 +41,5 @@ class ActivitySchedule(models.Model):
     frequency_units = models.CharField(max_length=1000, blank=True, null=True)
     startDate = models.DateTimeField(blank=True, null=True)
     endDate = models.DateTimeField(blank=True, null=True)
-    quantity = models.DecimalField(blank=True, null=True, decimal_places=2)
+    quantity = models.DecimalField(blank=True, null=True, max_digits=10, decimal_places=2)
     units = models.CharField(max_length=1000, blank=True, null=True)
